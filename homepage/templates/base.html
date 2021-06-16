@@ -62,10 +62,10 @@
             </li>
             {% if request.user.is_superuser %}
               <li class="nav-item">
-                <a class="nav-link" href="https://aria2.snaptraks.dev">AriaNg{% bs_icon 'box-arrow-up-right' %}</a>
+                <a class="nav-link" href="https://aria2.snaptraks.dev" target="_blank" rel="noopener noreferrer">AriaNg{% bs_icon 'box-arrow-up-right' %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://nextcloud.snaptraks.dev">Nextcloud{% bs_icon 'box-arrow-up-right' %}</a>
+                <a class="nav-link" href="https://nextcloud.snaptraks.dev" target="_blank" rel="noopener noreferrer">Nextcloud{% bs_icon 'box-arrow-up-right' %}</a>
               </li>
             {% endif %}
             <li class="nav-item {% block nav_item_about %}{% endblock %}">
