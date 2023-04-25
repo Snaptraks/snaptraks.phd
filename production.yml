@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 volumes:
   production_postgres_data: {}
@@ -10,6 +10,7 @@ services:
       context: .
       dockerfile: ./compose/production/django/Dockerfile
     image: homepage_production_django
+    container_name: homepage_django
     depends_on:
       - postgres
       - redis
@@ -29,6 +30,7 @@ services:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
     image: homepage_production_postgres
+    container_name: homepage_db
     volumes:
       - production_postgres_data:/var/lib/postgresql/data:Z
       - production_postgres_data_backups:/backups:z
@@ -38,9 +40,10 @@ services:
 
   redis:
     image: redis:5.0
+    container_name: homepage_redis
     restart: always
 
 networks:
   webproxy:
-    external:
-      name: webproxy
+    name: webproxy
+    external: true
