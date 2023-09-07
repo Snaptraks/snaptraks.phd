@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% block title %}Snaptraks' Home Page{% endblock title %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="snaptraks.dev home page">
+  <meta name="description" content="snaptraks.phd home page">
   <meta name="author" content="Snaptraks">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -59,7 +59,7 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="{% url 'home' %}">snaptraks.dev</a>
+      <a class="navbar-brand" href="{% url 'home' %}">snaptraks.phd</a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -68,11 +68,11 @@
           </li>
           {% if request.user.is_superuser %}
           <li class="nav-item">
-            <a class="nav-link" href="https://aria2.snaptraks.dev" target="_blank" rel="noopener noreferrer">
+            <a class="nav-link" href="https://aria2.snaptraks.phd" target="_blank" rel="noopener noreferrer">
               AriaNg{%bs_icon 'box-arrow-up-right' %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://nextcloud.snaptraks.dev" target="_blank"
+            <a class="nav-link" href="https://nextcloud.snaptraks.phd" target="_blank"
               rel="noopener noreferrer">Nextcloud{% bs_icon 'box-arrow-up-right' %}</a>
           </li>
           {% endif %}

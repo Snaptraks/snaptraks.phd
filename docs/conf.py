@@ -26,7 +26,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "snaptraks.dev"
+project = "snaptraks.phd"
 copyright = """2021, Snaptraks"""
 author = "Snaptraks"
 

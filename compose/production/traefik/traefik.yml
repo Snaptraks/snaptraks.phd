@@ -28,7 +28,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: "Host(`snaptraks.dev`) || Host(`www.snaptraks.dev`)"
+      rule: "Host(`snaptraks.phd`) || Host(`www.snaptraks.phd`)"
       entryPoints:
         - web-secure
       middlewares:
