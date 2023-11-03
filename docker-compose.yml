@@ -13,6 +13,9 @@ services:
       VIRTUAL_PORT: 80
       LETSENCRYPT_HOST: snaptraks.phd
       LETSENCRYPT_EMAIL: snaptraks@gmail.com
+    networks:
+      - webproxy
+
 networks:
   webproxy:
     name: webproxy
