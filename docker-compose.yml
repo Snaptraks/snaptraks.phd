@@ -8,6 +8,7 @@ services:
     expose:
       - 80
     environment:
+      HTTPS_METHOD: noredirect
       # proxy
       VIRTUAL_HOST: snaptraks.phd
       VIRTUAL_PORT: 80
