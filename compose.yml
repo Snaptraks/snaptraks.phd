@@ -5,12 +5,6 @@ services:
     container_name: webpage
     expose:
       - 80
-    environment:
-      # proxy
-      VIRTUAL_HOST: snaptraks.phd
-      VIRTUAL_PORT: 80
-      LETSENCRYPT_HOST: snaptraks.phd
-      LETSENCRYPT_EMAIL: snaptraks@gmail.com
     networks:
       - webproxy
     restart: always
